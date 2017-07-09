@@ -1,0 +1,7 @@
+syntax: glob
+
+CMakeCache.txt
+CMakeFiles
+*.cmake
+Makefile
+string_view_tests

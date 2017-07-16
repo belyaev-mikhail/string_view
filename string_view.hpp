@@ -264,7 +264,7 @@ public:
     // NON-STANDARD
     basic_string_view(const std::basic_string<Char, Traits>& str):
         data_(str.data()), size_(str.size()) {}
-    explicit operator std::basic_string<Char, Traits>() const {
+    /* implicit */ operator std::basic_string<Char, Traits>() const {
         return std::basic_string<Char, Traits>(data_, size_);
     }
 };
